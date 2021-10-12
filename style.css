@@ -1,0 +1,653 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑;
+    /* border: solid 1px; */
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: url(./img/background-min.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    position: relative;
+  
+
+}
+#top{
+    position: fixed;
+    z-index: 10000;
+    width: 5%;
+    bottom: 30px;
+    right: 30px;
+    
+}
+.bubline{
+    margin: 300px 0 20px 0 ; 
+}
+span , p{
+    font-size: 16px;
+}
+/* ----------------------------header navbar------------ */
+.navbar-brand img{
+    width: 220px;
+    
+}
+nav.navbar {
+    transition: 0.5s;
+  }
+  
+  nav.navbar.fixed-top.navbar-expand-md.navbar-top {
+    background-color:#8d82bb;
+    z-index: 10000;
+  }
+  nav.navbar.fixed-top.navbar-expand-md.navbar-top a {
+    color: white;
+    transition: 0.5s;
+  }
+  nav.navbar.fixed-top.navbar-expand-md.navbar-top a:hover {
+    color: #a2ddd9;
+  }
+
+/* //=================================視差banner*/    
+#hero{   
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    overflow: hidden;
+}
+#hero::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#2e3453,transparent);
+    z-index: 1000;
+}
+
+#hero > img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+
+.mybody{
+   
+   /* background: linear-gradient(#2e3453,#2e3453,#8d82bb,#83a2ce); */
+   
+  
+}
+section{
+    text-align: center;
+    padding: 50px 0;
+}
+.container{
+    /* padding: 20px; */
+}
+
+/* //=================================故事起源*/    
+.sec1{
+    padding: 100px;
+    position: relative;
+
+}
+#story{
+    position: relative;
+    text-align: center;
+    margin: 50px 30px ;
+    padding: 50px;
+    line-height: 4rem;
+    color: white;
+    font-size: 18px;
+    scroll-behavior: smooth;
+
+}
+
+/* //=================================四個圓形卡片 */
+
+.circleCards {
+	width: 100%;
+	display: flex ;
+	justify-content: center;
+
+}
+.circleCards li{
+	display: flex ;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+    position: relative;
+    flex-shrink: 0;
+    top: 50px;
+	width: 155px;
+	height: 155px;
+    border-radius: 50%;
+	
+	background-color:#2e3453 ;
+    border: white 1px solid;
+	
+	line-height: 20px;
+	font-size: 16px;
+	color: #fff;
+	
+}
+
+.circleCards li + li{
+	margin-left: 100px;
+}
+
+
+
+/* //=================================陣營介紹 */
+
+.linetest img{
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: 0px;
+    
+}
+
+#intrTitle{
+    margin-bottom: 100px;
+}
+
+.introduction .item img{
+    margin-top: 50px;
+}
+
+
+.wrap{
+	width: 100%;
+    padding: 100px;
+	margin: 0
+}
+.item{
+	display: flex;
+	align-items: center;
+	margin-bottom: 70px;
+	
+}
+.item h2{ 
+	
+	margin-bottom: 1em;
+    font-size: 25px;
+    color: white;
+}
+.item p{ 
+	
+	line-height: 1.6;
+    font-size: 16px;
+    color: white;
+}
+.item .pic{
+	width: 50%;
+	flex-shrink: 0;
+}
+.item .pic img{
+	width: 100%;
+	vertical-align: middle;
+}
+.item .txt{
+	width: 50%;
+    height:40%;
+	flex-shrink: 0;
+    margin-top: 100px;
+	padding:60px 50px;
+	box-sizing: border-box;
+	position: relative;
+    /* background-color: #2e3453 ; */
+}
+
+/* .item > :first-child{
+	margin-right: -10%;
+} */
+
+
+
+/* //=================================卡牌介紹 */
+
+
+
+
+/* //標提塊 */
+#cardTitle{
+    position: relative;
+}
+#cardTitle::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to top,#e8c5df,transparent);
+    z-index: 2000;
+}
+/* //卡牌介紹整塊區域 */
+.CardInt{
+background-color: #e8c5df;
+position: relative;
+width: 100%;
+padding-top: 80px;
+padding-bottom:200px;
+}
+.CardInt .pinkpic{
+    position: absolute;
+}
+.CardInt .pic1{
+    left: -250px;
+    bottom: 250px;
+    
+}
+.CardInt .pic2{
+    right: -300px;
+    top: 150px;
+    
+}
+.CardInt .pic3{
+    right: -600px;
+    bottom: -500px;
+    
+}
+
+
+/* //卡牌陣營按鈕 */
+.cardButton{
+    margin: 30px;
+}
+.cardButton > .button{
+    padding: 20px;
+    background-color: #2e3453;
+    font-size: 20px;
+    color: white;
+}
+
+.cardButton > .button:hover{
+    background-color: #8d82bb;
+}
+
+/* --------------角色介紹的按鈕們--------------------- */
+
+/* #listengodBtn.open{
+    display: block;
+}
+#listengodBtn{
+    display: none;
+}
+#listenwolfdBtn.open{
+    display: block;
+}
+#listenwolfdBtn{
+    display: none;
+} */
+
+#mydiv1{
+    display: none;
+}
+
+
+#mydiv3{
+    display: none;
+}
+#mydiv4{
+    display: none;
+}
+
+
+
+/* //卡牌身份按鈕 */
+.cardButton2{
+    margin: 20px;
+}
+.cardButton2 > .button{
+    /* margin: 10px; */
+    color: #2e3453;
+}
+
+.cardButton2 p{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+
+}
+.cardButton2 p:hover{
+    border-bottom: 5px solid #2e3453;
+}
+
+
+
+
+
+
+
+/* //卡牌名稱 */
+.mycard{
+    padding: 10px;
+    color: #2e3453;
+ 
+}
+.mycard h2{
+    margin-top: 20px;
+}
+
+#card1,#card2,#card3,#card4,#card5,#card6,#card8,#card9,
+#card10,#card11,#card12,#card13,#card14,#card15,#card16,#card17,#card18,
+#card19,#card20{
+    display: none;
+}
+
+
+
+/* //卡排說明 */
+
+.cardFeature p{
+    /* width: 300px; */
+    text-align: center;
+    padding: 30px;
+    color: #2e3453;
+    font-size: 16px;
+    border: solid 1px #2e3453;
+    border-left: solid 20px #2e3453;
+    display: inline-block;
+    
+    
+    
+}
+/* //=================================人數配置 */
+.preTitle{
+    margin-top: 100px;
+}
+.gameContent{
+    padding: 10px;
+}
+.gameContent p{
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    padding: 50px;
+
+}
+.inputPeople{
+    margin: 20px;
+}
+.in1{
+    /* padding: 10px; */
+    background-color: #2e3453;
+    padding: 20px;
+    
+    
+   
+}
+.in1 span{
+    color: white;
+   
+    font-size: 22px;
+    
+   
+
+}
+.in2{
+    padding: 20px;
+    border: solid 2px #2e3453 ;
+    
+    
+
+}
+.in2 span{
+   
+    font-size: 22px;
+    color: #2e3453 ;
+
+}
+
+.in2 button{
+    background-color: #2e3453;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    border-color: transparent;
+}
+.in2 button:active{
+    background-color: #8d82bb;
+    border: 2px solid #2e3453;
+    color: #2e3453;
+}
+
+
+.in2 input{
+    width: 60px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid 2px #2e3453 ;
+    background-color: transparent;
+    color: #2e3453;
+    padding: 15px;
+}
+
+/* 輸入結果 */
+.myresult{
+    padding-top: 50px;
+}
+.resultName{
+    padding: 20px;
+}
+.resultPeople{
+    padding: 20px;  
+}
+.god{
+    background-color: #e8c5df;
+    font-size: 22px;
+    color: #2e3453;
+}
+.human{
+    background-color: #e8c5df;
+    font-size: 22px;
+    color: #2e3453;
+}
+.wolf{
+    background-color:#a2ddd9;
+    font-size: 22px;
+    color: #2e3453;
+}
+.resgod{
+    border: solid 2px #e8c5df;
+}
+   
+.reshuman{
+    border: solid 2px #e8c5df;
+    
+}
+.reswolf{
+    border: solid 2px #a2ddd9 ;
+    
+}
+.resgod span{
+    font-size: 25px;
+    color: #2e3453;
+}
+.reshuman span{
+    font-size: 25px;
+    color: #2e3453;
+}
+.reswolf span{
+    font-size: 25px;
+    color: #2e3453;
+}
+.resbox{
+    padding: 0 50px;
+}
+
+
+/* ---------------------------------------遊戲開始流程------------- */
+.startTitle{
+    margin: 50px;
+}
+.start1{
+    
+    padding: 50px;
+}
+.start1 p{
+    line-height: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 50px;
+    
+}
+/* --------part1 晚上階段---------------------------------- */
+
+.nightcont p{
+    font-size: 16px;
+    border: 3px solid #2e3453;
+    padding: 70px;
+    line-height: 30px;
+    text-align: left;
+    color: #2e3453;
+    border-top: 30px solid #2e3453;
+}
+.night1{
+    background-color: #2e3453;
+    /* font-size: 25px; */
+    color: white;
+    margin-top: 200px;
+
+}
+.night2{
+    border: solid 2px #2e3453;
+    color: #2e3453;
+    padding:20px ;
+}
+.night1 span{
+    font-size: 22px;
+}
+.night2 p{
+    font-size: 18px;
+
+}
+
+
+/* --------part2白天階段---------------------------------- */
+.daycont p{
+    font-size: 16px;
+    border: 3px solid #e8c5df;
+    padding: 50px;
+    line-height: 30px;
+    text-align: left;
+    color: #2e3453;
+    border-top: 30px solid #e8c5df;
+}
+
+
+
+.day1{
+    background-color: #e8c5df;
+    /* font-size: 25px; */
+    color: #2e3453;
+    margin-top: 200px;
+
+}
+.day2{
+    
+    border: solid 2px #e8c5df;
+    color: #2e3453;
+    padding:20px ;
+}
+.day1 span{
+    font-size: 22px;
+}
+.day2 p{
+    font-size: 18px;
+
+}
+/* ------------遊戲結束---------- */
+.gameover{
+    
+    padding: 30px;
+    margin: 100px 0;
+    
+}
+.gameover2{
+    /* margin: 20px 0; */
+    border: 3px solid #2e3453;
+    padding: 50px;
+    /* margin-top: 200px; */
+}
+/* -------------術語解析------------------ */
+.lastInt{
+
+    background-color: #a2ddd9;
+    width: 100%;
+    padding-top: 100px;
+    /* padding-bottom:200px; */
+    position: relative;
+   
+    
+        
+}
+
+.lastpart{
+    padding: 0 80px;
+    
+}
+.lastcol{
+    padding: 100px;
+    z-index: 10;
+
+}
+
+.sunset img{
+    width: 100%;
+    background-color: #a2ddd9;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+   
+}
+.accordion-item{
+   color: #2e3453; 
+
+}
+.accordion-header{
+    border: 2px solid #2e3453;
+    
+}
+
+#flush-headingOne1{
+    border: 2px solid #2e3453;
+
+}
+#flush-collapseOne1,
+#flush-collapseTwo2{
+    border: 2px solid #2e3453;
+}
+#lastTitle img{
+    width: 100%;
+}
+
+#lastTitle{
+    position: relative;
+}
+#lastTitle::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to top,#a2ddd9,transparent);
+    z-index: 2000;
+}
